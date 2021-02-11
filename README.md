@@ -1,1 +1,6 @@
-# docker-python3-template
+# Dockerの環境でPython3の環境構築
+
+環境構築作業が面倒だったので、Dockerで環境を作った後にVSCodeのRemote接続で作業をしたいなと思ったので。
+色々手探りなため間違いがある可能性あり。
+
+今のところ環境は問題なく動いている。
