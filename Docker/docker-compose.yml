@@ -1,0 +1,16 @@
+# バージョンを指定する 特に理由がなければ最新版を使用する
+version: '3.7'
+services:
+  python3:
+    # デフォルトで生成される名前の代わりに、コンテナ名を指定する
+    container_name: 'python3'
+    hostname: 'k_thanatos'
+    build:
+      # DockerfileのパスやGitリポジトリのURLを指定する
+      context: .
+    # コンテナ内のworking directory
+    working_dir: /usr/src
+    volumes:
+      - ../src:/usr/src
+    # サーバー起動以外の場合は起動後にすぐ終了することを防ぐためにtrueにしておく
+    tty: true
